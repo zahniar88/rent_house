@@ -187,48 +187,7 @@ class DetailPage extends StatelessWidget {
                     style: descText,
                   ),
                 ),
-                SizedBox(height: 40),
-                Container(
-                  height: 70,
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Price",
-                            style: priceTitle,
-                          ),
-                          Text(
-                            "\$7,500",
-                            style: priceText,
-                          ),
-                        ],
-                      ),
-                      Spacer(),
-                      MaterialButton(
-                        onPressed: () {},
-                        color: purpleColor,
-                        minWidth: 196,
-                        height: 50,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(28),
-                        ),
-                        child: Text(
-                          "Book Now",
-                          style: TextStyle(
-                            color: whiteColor,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
+                SizedBox(height: 110),
               ],
             ),
             // NOTE: button back
@@ -252,6 +211,48 @@ class DetailPage extends StatelessWidget {
                 ),
               ),
             ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+        height: 80,
+        color: whiteColor,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Price",
+                  style: priceTitle,
+                ),
+                Text(
+                  "\$7,500",
+                  style: priceText,
+                ),
+              ],
+            ),
+            Spacer(),
+            MaterialButton(
+              onPressed: () {},
+              color: purpleColor,
+              minWidth: 196,
+              height: 50,
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(28),
+              ),
+              child: Text(
+                "Book Now",
+                style: TextStyle(
+                  color: whiteColor,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            )
           ],
         ),
       ),
